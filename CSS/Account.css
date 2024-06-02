@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-image: url(../Image/background1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px 0 50px;
+  border: 10px white;
+  border-style: double;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 290px;
+  height: 60px;
+}
+
+.button a {
+  padding: 0 30px 0 30px;
+  margin: 10000px 0 0 0;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button a:hover {
+  background-color: steelblue;
+  transition: 0.5s;
+}
+
+#register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 30px;
+  border: 10px solid black;
+  border-radius: 0.5rem;
+  background-color:#333;
+  color: white;
+}
+
+form h1{
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  
+}
+
+.form-group input {
+  outline: none;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="password"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 5px solid white;
+}
+
+.form-group input:hover {
+  background-color: lightgrey;
+}
+
+.form-btn {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 200px;
+  margin-left: 110px;
+}
+
+.agree {
+  padding: 10px;
+}
+
+.form-btn:hover {
+  background-color: steelblue;
+}
+
+#error {
+  font-size: 15px;
+  color: red;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    border: 10px white;
+    border-style: double;
+  }
+  
+  .logo {
+    width: 400px;
+    height: 100px;
+  }
+  
+  .button a {
+    padding: 0 20px 0 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .character {
+    margin: 50px 110px 50px 110px;
+  }
+}

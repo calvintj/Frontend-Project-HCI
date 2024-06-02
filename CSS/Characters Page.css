@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-image: url(../Image/background1.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px 0 50px;
+  border: 10px white;
+  border-style: double;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 290px;
+  height: 60px;
+}
+
+.button a {
+  padding: 0 30px 0 30px;
+  margin: 10000px 0 0 0;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button a:hover {
+  background-color: steelblue;
+  transition: 0.5s;
+}
+
+.character {
+  background: url(../Image/map.png);
+  background-blend-mode:screen;
+  background-size:1600px;
+  text-align: center;
+  margin: 10% 20% 10% 20%;
+  border: 10px dashed;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.heros, .enemy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 100px;
+  transition: 0.1s;
+}
+
+.name1, .nick1 {
+  color: white;
+  margin: 0 0 0 -330px;
+}
+
+.name2 {
+  color: white;
+  margin: -60px 0 0 450px;
+}
+
+.nick2 {
+  color: white;
+  margin: 0 0 0 450px;
+}
+
+.cloud{
+  margin-left: 70px;
+  padding-top: 30px;
+  height: 260px;
+  transition: 0.1s;
+}
+
+.gerald{
+  margin-left: 150px;
+  height: 250px;
+  transition: 0.1s;
+}
+
+.cloud:hover, .gerald:hover, .enemy:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 2% 1% 2%;
+    border: 10px white;
+    border-style: double;
+  }
+
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .button a {
+    padding: 0 20px 0 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 80%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .character {
+    margin: 10% 10% 10% 10%;
+  }
+
+  .gerald{
+    margin: 13% 0 10% 0;
+    height: 60%;
+    width: 60%;
+  }
+
+  .cloud{
+    margin: 10% 0 10% 0;
+    padding-top: 30px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .voldemort{
+    height: 80%;
+    width: 80%;
+  }
+
+  .name1 {
+    color: white;
+    margin: -10% 0 0 -50%;
+  }
+
+  .name2 {
+    color: white;
+    margin: -5% 0 0 40%;
+  }
+}

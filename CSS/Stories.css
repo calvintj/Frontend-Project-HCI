@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-image: url(../Image/background1.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px 0 50px;
+  border: 10px white;
+  border-style: double;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 290px;
+  height: 60px;
+}
+
+.button a {
+  padding: 0 30px 0 30px;
+  margin: 10000px 0 0 0;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button a:hover {
+  background-color: steelblue;
+  transition: 0.5s;
+}
+
+.character {
+  background: url(../Image/book.png);
+  background-size: 1120px;
+  text-align: center;
+  padding-bottom: 60px;
+  margin: 10px 200px 20px 200px;
+  color: black;
+}
+
+.heros,
+.enemy {
+  display: flex;
+  flex-direction: column;
+}
+.cloud {
+  margin: 80px 0 0 200px;
+  height: 250px;
+  width: 200px;
+  transition: 0.1s;
+}
+
+.gerald {
+  margin-right: 200px;
+  height: 230px;
+  width: 230px;
+  transition: 0.1s;
+}
+.voldemort {
+  margin: 30px 0 0 100px;
+  display: flex;
+  height: 200px;
+  width: 350px;
+  padding: 0;
+  transition: 0.1s;
+}
+
+.cloud:hover, .gerald:hover, .voldemort:hover {
+  transform: scale(1.1);
+}
+
+.cloudstory {
+  display: flex;
+}
+
+.story1 {
+  font-size: 20px;
+  text-align: justify;
+  margin: 100px 120px 0 200px;
+  font-style: italic;
+}
+
+.geraldstory {
+  display: flex;
+}
+
+.story2 {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 170px;
+  font-style: italic;
+}
+
+.story2 h1 {
+  text-align: right;
+}
+
+.story3 {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 600px;
+  margin-right: 120px;
+  margin-top: -200px;
+  font-style: italic;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+    border: 10px white;
+    border-style: double;
+  }
+
+  .logo {
+    width: 400px;
+    height: 100px;
+  }
+
+  .button a {
+    padding: 0 20px 0 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .character {
+    background: url(../Image/book.png);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0 0 0 0;
+    color: black;
+  }
+  
+  .heros{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4%;
+    /* margin-bottom: 10%; */
+  }
+
+  .enemy{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cloud {
+    margin: 15% 0 5% 15%;
+    display: flex;
+    height: 50%;
+    width: 50%;
+  }
+
+  .gerald {
+    margin: 0 15% 0 0;
+    height: 30%;
+    width: 30%;
+  }
+
+  .voldemort {
+    margin: -5% 0 8% 0;
+    display: flex;
+    height: 50%;
+    width: 50%;
+    padding: 0;
+  }
+  
+  .cloudstory {
+    display: flex;
+    margin-top: -5%;
+  }
+  
+  .story1 {
+    font-size: 100%;
+    text-align: justify;
+    margin: 15% 20% 0 17%;
+  }
+  
+  .story2 {
+    font-size: 100%;
+    text-align: justify;
+    margin: 2% 12% 10% 12%;
+  }
+  
+  .story2 h1 {
+    text-align: right;
+  }
+  
+  .story3 {
+    font-size: 100%;
+    text-align: justify;
+    margin: -5% 10% 0 3%;
+  }
+  
+}

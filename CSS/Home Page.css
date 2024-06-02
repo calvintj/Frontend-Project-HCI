@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-image: url(../Image/background1.jpg), url(../Image/background2.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px 0 50px;
+  border: 10px white;
+  border-style: double;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 290px;
+  height: 60px;
+}
+
+.button a {
+  padding: 0 30px 0 30px;
+  margin: 10000px 0 0 0;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button a:hover {
+  background-color: steelblue;
+  transition: 0.5s;
+}
+
+.trailer {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.iframe {
+  width: 60%;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 2%;
+}
+
+.container h4 {
+  text-align: center;
+  margin: 50px 150px 0 150px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+.features {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+.feature1,
+.feature3 {
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+}
+
+.feature2,
+.feature4 {
+  text-align: right;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding: 20px;
+}
+
+.place {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.place h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 120px;
+  margin: 10px;
+  border: 10px solid;
+  border-radius: 10px;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.1s;
+  display: block;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: cursive;
+    background-image: url(../Image/background1.jpg), url(../Image/background2.jpg);
+    background-position: top, bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 2% 1% 2%;
+    border: 10px white;
+    border-style: double;
+  }
+
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .button a {
+    padding: 0 20px 0 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 80%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .trailer {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .iframe {
+    width: 40%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 2%;
+    margin: 10px 10% 0 10%;
+  }
+
+  .container h4 {
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 10% 0 10%;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .features {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 90px;
+  }
+
+  .feature1,
+  .feature3 {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+  }
+
+  .feature2,
+  .feature4 {
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+  }
+
+  .place {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .place h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box {
+    width: 120px;
+    margin: 10px;
+    border: 10px solid;
+    border-radius: 10px;
+  }
+
+  .box img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.1s;
+    display: block;
+  }
+
+  .box img:hover {
+    transform: scale(1.1);
+  }
+}
